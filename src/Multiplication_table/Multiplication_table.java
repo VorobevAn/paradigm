@@ -16,12 +16,12 @@ import java.util.Scanner;
 
 public class Multiplication_table {
     public static void main(String[] args) {
-        printTable(getNum());
+        printTable(number());
     }
     /**
      * Получение числа от пользователя через консоль
      */
-    private static int getNum() {
+    private static int number() {
         int num = 0;
         while (num == 0) {
             System.out.print("Введите число от 1 до 10: ");
@@ -33,7 +33,7 @@ public class Multiplication_table {
                     num = 0;
                 }
             } catch (InputMismatchException e) {
-                System.out.println("Введено не корректное число ");
+                System.out.println("Вы ввели не число");
                 num = 0;
             }
         }
